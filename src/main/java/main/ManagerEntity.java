@@ -69,4 +69,10 @@ public class ManagerEntity {
     public int hashCode() {
         return Objects.hash(id, firstName, lastName, department);
     }
+
+    @Override
+    public String toString(){
+        return String.format("Manager: %s %s",
+                getFirstName(), getLastName());
+    }
 }
